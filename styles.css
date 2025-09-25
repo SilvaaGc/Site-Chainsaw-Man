@@ -1,188 +1,215 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
-    --vermelho-sangue: #B30000;
-    --cinza-escuro: #1A1A1A;
-    --cinza-claro: #F5F5F5;
-    --alto-contraste-fundo: #000000;
-    --alto-contraste-texto: #ffffff;
-    --alto-contraste-link: #ff0000;
+  --vermelho-sangue: #B30000;
+  --cinza-escuro: #1A1A1A;
+  --cinza-claro: #F5F5F5;
+  --alto-contraste-fundo: #000000;
+  --alto-contraste-texto: #ffffff;
+  --alto-contraste-link: #ff0000;
 }
 
 body {
-    font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--cinza-claro);
-    color: var(--cinza-escuro);
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--cinza-claro);
+  color: var(--cinza-escuro);
 }
 
 header {
-    background-color: var(--cinza-escuro);
-    color: white;
-}
-
-section {
-    padding-bottom: 5rem;
+  background-color: var(--cinza-escuro);
+  color: white;
 }
 
 .nav-link {
-    color: var(--vermelho-sangue);
-    font-weight: 600;
+  color: var(--vermelho-sangue);
+  font-weight: 600;
+}
+
+section {
+  padding-bottom: 5rem;
 }
 
 .inicio-fundo {
-    background-image: url('img/chainsaw-bg.jpg'); /* imagem temática de fundo */
-    background-size: cover;
-    background-position: center;
-    border-radius: 20px;
-    width: 100%;
-    height: 606px;
-    padding: 40px;
-    margin: 0 auto;
+  background-image: url('img/chainsaw-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  width: 100%;
+  height: 606px;
+  padding: 40px;
+  margin: 0 auto;
 }
 
 .img-inicio {
-    position: absolute;
-    right: 0;
-    top: 18rem;
-    width: 40rem;
-    height: auto;
+  position: absolute;
+  right: 0;
+  top: 18rem;
+  width: 40rem;
+  height: auto;
 }
 
 .esquerda-conteudo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
 .botao-inicio {
-    background-color: var(--vermelho-sangue);
-    border-radius: 30px;
-    border: none;
-    width: 14em;
-    height: 3em;
-    color: white;
+  background-color: var(--vermelho-sangue);
+  border-radius: 30px;
+  border: none;
+  width: 14em;
+  height: 3em;
+  color: white;
 }
 
 .display-4 {
-    text-shadow: -5px 5px var(--vermelho-sangue);
+  text-shadow: -5px 5px var(--vermelho-sangue);
 }
 
 #sobre {
-    position: relative;
-    padding-top: 5rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    background: url('img/chainsaw-symbol.png') top right no-repeat;
-    background-size: 120px 120px;
+  position: relative;
+  padding-top: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background: url('img/chainsaw-symbol.png') top right no-repeat;
+  background-size: 120px 120px;
 }
 
 #sobre .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.8em;
-    font-style: normal;
-    color: var(--vermelho-sangue);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.8em;
+  color: var(--vermelho-sangue);
 }
 
 #galeria {
-    background-color: #EDEDED;
+  background-color: #EDEDED;
 }
 
 .fundo-galeria {
-    background: url('img/blood-splatter.png') bottom right no-repeat;
-    background-size: 150px 150px;
+  background: url('img/blood-splatter.png') bottom right no-repeat;
+  background-size: 150px 150px;
 }
 
 #contato {
-    background-image: url('img/chainsaw-bg.jpg');
-    background-size: cover;
-    padding: 4rem 0;
+  background-image: url('img/chainsaw-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 0;
+  color: white;
 }
 
 .formulario {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(179, 0, 0, 0.3);
-    font-weight: bold;
+  background-color: rgba(26, 26, 26, 0.95);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(179, 0, 0, 0.5);
+  font-weight: bold;
+  color: white;
 }
 
-.formulario button {
-    background-color: var(--vermelho-sangue);
-    border: none;
-    font-weight: bold;
-    color: white;
+.formulario h2 {
+  color: var(--vermelho-sangue);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.2em;
+}
+
+.formulario label {
+  color: #ffcccc;
 }
 
 .form-control {
-    background-color: #F1EDEF;
+  background-color: #2c2c2c;
+  color: white;
+  border: 1px solid #ff0000;
+}
+
+.form-control::placeholder {
+  color: #999;
+}
+
+.formulario button {
+  background-color: var(--vermelho-sangue);
+  border: none;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+  background-color: #ff0000;
+}
+
+footer {
+  background-color: var(--cinza-escuro);
+  color: white;
 }
 
 .menu-acessibilidade {
-    position: fixed;
-    top: 2rem;
-    right: 20px;
-    z-index: 1000;
+  position: fixed;
+  top: 2rem;
+  right: 20px;
+  z-index: 1000;
 }
 
 .rotacao-botao {
-    transform: rotate(-90deg);
-    transform-origin: right center;
+  transform: rotate(-90deg);
+  transform-origin: right center;
 }
 
 .opcoes-acessibilidade {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .opcoes-acessibilidade button {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
+
 .apresenta-lista {
-    display: none;
+  display: none;
 }
 
 .alto-contraste {
-    background-color: var(--alto-contraste-fundo);
-    color: var(--alto-contraste-texto);
+  background-color: var(--alto-contraste-fundo);
+  color: var(--alto-contraste-texto);
 }
 
 .alto-contraste header,
 .alto-contraste footer,
 .alto-contraste .formulario {
-    background-color: var(--alto-contraste-fundo);
-    color: var(--alto-contraste-texto);
+  background-color: var(--alto-contraste-fundo);
+  color: var(--alto-contraste-texto);
 }
 
 .alto-contraste .nav-link {
-    color: var(--alto-contraste-link);
+  color: var(--alto-contraste-link);
 }
 
 .alto-contraste .botao-inicio,
 .alto-contraste .formulario button,
 .alto-contraste .btn-primary {
-    background-color: var(--alto-contraste-link);
-    color: var(--alto-contraste-fundo);
+  background-color: var(--alto-contraste-link);
+  color: var(--alto-contraste-fundo);
 }
 
-.alto-contraste #sobre {
-    background: none;
+.alto-contraste #sobre,
+.alto-contraste .fundo-galeria {
+  background: none;
 }
 
 .alto-contraste #galeria {
-    background-color: var(--alto-contraste-fundo);
-}
-.alto-contraste .fundo-galeria {
-    background: none;
+  background-color: var(--alto-contraste-fundo);
 }
