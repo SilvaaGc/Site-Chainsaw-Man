@@ -1,15 +1,17 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // Botão principal de acessibilidade (estilizado como alavanca de motosserra)
   const botaoDeAcessibilidade = document.getElementById('botao-acessibilidade');
   const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidade');
 
   botaoDeAcessibilidade.addEventListener('click', function () {
-    botaoDeAcessibilidade.classList.toggle('rotacao-botao');
-    opcoesDeAcessibilidade.classList.toggle('apresenta-lista');
+    botaoDeAcessibilidade.classList.toggle('rotacao-botao'); // Gira como uma engrenagem
+    opcoesDeAcessibilidade.classList.toggle('apresenta-lista'); // Exibe opções como lâminas ocultas
 
     const botaoSelecionado = botaoDeAcessibilidade.getAttribute('aria-expanded') === 'true';
     botaoDeAcessibilidade.setAttribute('aria-expanded', !botaoSelecionado);
   });
 
+  // Controles de fonte (como ajustar a potência da motosserra)
   const aumentaFonteBotao = document.getElementById('aumentar-fonte');
   const diminuiFonteBotao = document.getElementById('diminuir-fonte');
   const alternaContraste = document.getElementById('alterna-contraste');
@@ -26,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.style.fontSize = `${tamanhoAtualFonte}rem`;
   });
 
+  // Alternância de contraste: modo caçador vs modo demônio
   alternaContraste.addEventListener('click', function () {
     document.body.classList.toggle('alto-contraste');
   });
+});
